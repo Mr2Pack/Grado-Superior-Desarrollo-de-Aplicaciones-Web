@@ -1,0 +1,32 @@
+<!DOCTYPE html5>
+<html lang=es>
+<head>
+    <meta charset="UTF-12">
+    <title>Información sobre Tenis</title>
+<body>
+    <h1>El Fascinante Mundo del Tenis</h1>
+
+    <p>El tenis es un deporte de raqueta que se juega en una cancha rectangular dividida en dos mitades por una red. Es uno de los deportes más populares en todo el mundo y se practica tanto a nivel profesional como amateur.</p>
+
+    <h2>Equipamiento de Tenis</h2>
+    <ul type="circulo" start="3">
+        <li>Raqueta: La raqueta es la herramienta principal en el tenis y viene en diferentes tamaños y estilos.<li>
+        <li>Pelotas: Las pelotas de tenis son amarillas y están diseñadas para rebotar de manera consistente.<li>
+        <li>Zapatillas: Es importante usar zapatillas adecuadas para evitar lesiones en la cancha.<li>
+    </ul>
+
+    <h3>Reglas Básicas</h3>
+    <ol type="a" start="d">
+        <li>El juego comienza con un saque desde un lado de la cancha hacia el otro.<li>
+        <li>El objetivo es golpear la pelota de manera que el oponente no pueda devolverla dentro de la cancha.<li>
+        <li>El puntaje se lleva en 15, 30, 40 y juego. Un jugador debe ganar por al menos dos puntos.<li>
+    </ol>
+
+    <h4><b>Consejo:</b> Mantén <u><i>fuerte la concentración</u> y la técnica</i> en la cancha.</h4>
+
+    <p>El tenis es un deporte emocionante que requiere <strong>dedicación</strong> y <del>entrenamiento constante</del> para mejorar tus habilidades.</p>
+
+    <img src="./jugadores/tenis" alt="Jugador de tenis en acción" width="300" height="200">
+</body>
+</head>
+

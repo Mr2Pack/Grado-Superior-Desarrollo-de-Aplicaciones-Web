@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario POST</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="telefono">Teléfono: </label>
+        <input type="texto" id="tel" name="tel" required>
+        <label for="contraseña">Contraseña: </label>
+        <input type="password" id="contraseña" name="contraseña" required>
+        <input type="submit" value="Enviar">
+        <label for="sistema">Sistema operativo:</label>
+        <select id="sistema" name="sistema">
+            <option value="win">Windows</option>
+            <option value="linux" selected>Linux</option>
+            <option value="mac">macOS</option>
+            <option value="android" disabled>Android</option>
+        </select>
+        <input type="reset" value="Limpiar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

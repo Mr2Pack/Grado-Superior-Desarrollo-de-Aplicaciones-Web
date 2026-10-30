@@ -1,0 +1,67 @@
+/* SISTEMA DE VENTAS */
+Table Venta {
+  nro_factura integer [pk]
+  descuento integer
+  fecha date
+  montoFinal integer
+}
+
+Table Producto {
+  id_producto integer [pk]
+  nombre varchar
+  stock integer
+  precio integer
+}
+
+Table Proveedor {
+  CUIT integer [pk]
+  nombre varchar
+  web varchar
+  teléfono varchar
+  dirección integer
+  ciudad varchar
+  comuna varchar
+  calle varchar
+  número integer
+}
+
+Table Cliente {
+  CUIT integer [pk]
+  nombre varchar
+  teléfono varchar
+  dirección integer
+  ciudad varchar
+  comuna varchar
+  calle varchar
+  número varchar
+}
+
+Table Categoría {
+  id_categoría integer [pk]
+  nombre varchar
+  descripción varchar
+}
+
+/* Relaciones */
+Table participa {
+  nro_factura integer [not null, ref: > Venta.nro_factura]
+  id_producto integer [not null, ref: > Producto.id_producto]
+  cantidad_vta_unidad integer
+  precio_unidad integer
+  montoTotalProducto integer
+}
+
+Table compra {
+  nro_factura integer [pk, not null, ref: > Venta.nro_factura]
+  CUIT integer [not null, ref: > Cliente.CUIT]
+}
+
+Table se_clasifica {
+  id_categoría integer [not null, ref: > Categoría.id_categoría]
+  id_producto integer [pk, not null, ref: > Producto.id_producto]
+}
+
+Table tiene {
+  CUIT integer [pk, not null, ref: > Proveedor.CUIT]
+  id_producto integer [not null, ref: > Producto.id_producto]
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <fieldset>
+            <legend>Formulario</legend>
+            <label for="nombre_usuario">Nombre:</label>
+            <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Escribe aquí tu nombre" maxlength="30" required>
+            <br/>
+            <label for="apellidos_usuario">Apellidos:</label>
+            <input type="text" id="apellidos_usuario" name="apellidos_usuario" placeholder="Escribe aquí tus apellidos" maxlength="30" required>
+            <br/>
+            <label for="dni_usuario">DNI:</label>
+            <input type="text" id="dni_usuario" name="dni_usuario" placeholder="Escribe aquí tu DNI" maglenth="30" required>
+            <br/>
+            <label for="genero_usuario">¿Con qué genero te identificas?</label>
+            <input type="radio" id="genero_usuario" name="genero_usuario" value="Masculino" required>
+            <label for="genero_usuario">Masculino</label>
+            <input type="radio" id="genero_usuario" name="genero_usuario" value="Femenino" required>
+            <label for="genero_usuario">Femenino</label>
+            <br/>
+            <label for="fecha_nacimiento">¿Cuándo naciste?</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            <br/>
+            <label for="numero_Telefono">Teléfono:</label>
+            <input type="tel" id="numero_Telefono" name="numero_Telefono" placeholder="Escribe aquí tu número de teléfono" maxlength="30" required>
+            <br/>
+            <label for="correo_electronico">Correo electrónico:</label>
+            <input type="email" id="correo_electronico" name="correo_electronico" placeholder="Escribe aquí tu correo electrónico" maxlength="30" required>
+            <br/>
+            <label for="direccion_usuario">Dirección:</label>
+            <input type="text" id="direccion_usuario" name="direccion_usuario" placeholder="Escribe aquí tu dirección" maxlength="30" required>
+            <br/>
+            <label for="municipio_usuario">Municipio:</label>
+            <input type="text" id="municipio_usuario" name="municipio_usuario" placeholder="Escribe aquí tu municipio" maxlength="30" required>
+            <br/>
+            <label for="provincia_usuario">Provincia:</label>
+            <select id="provincia_usuario" name="provincia_usuario" required>
+                <option value="elegir" selected>Elegir</option>
+                <option value="Alicante">Alicante</option>
+                <option value="Almería">Almería</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Murcia">Murcia</option>
+                <option value="Valencia">Valencia</option>
+            </select>
+            <br/>
+            <label for="pais_usuario">País:</label>
+            <select id="pais_usuario" name="pais_usuario" required>
+                <option value="elegir" selected>Elegir</option>
+                <option value="España">España</option>
+                <option value="Francia">Francia</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Italia">Italia</option>
+                <option value="Portugal">Portugal</option>
+            </select>
+            <br/>
+            <label for="centro_estudios">Centro de estudios:</label>
+            <input type="text" id="centro_estudios" name="centro_estudios" placeholder="Escribe aquí tu centro de estudios" maxlength="30" required>
+            <br/>
+            <label for="ciclo">Ciclo:</label>
+            <select id="ciclo" name="ciclo" required>
+                <option value="smr">Sistemas Microinformáticos y Redes</option>
+                <option value="asir">Administración de Sistemas en Red</option>
+                <option value="daw" selected>Desarrollo de Aplicaciones Web</option>
+                <option value="dam">Desarrollo de Aplicaciones Multiplataforma</option>
+            </select>
+            <br/>
+            <label for="presencial_o_no">¿Cómo es tu ciclo?</label>
+            <input type="radio" id="presencial_o_no" name="presencial_o_no" value="Presencial" required>
+            <label for="presencial_o_no">Presencial</label>
+            <input type="radio" id="presencial_o_no" name="presencial_o_no" value="No presencial" required> 
+            <label for="presencial_o_no">Semipresencial</label>
+            <br/>
+            <label for="nivel_ingles">¿Cuál es tu nivel de inglés?</label>
+            <select id="nivel_ingles" name="nivel_ingles" required>
+                <option value="elegir" selected>Elegir</option>
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+                <option value="C1">C1</option>
+                <option value="C2">C2</option>
+            </select>
+            <br/>
+            <label for="modulos">¿Qué modulos quieres cursar?</label>
+            <select id="modulos" name="modulos" required>
+                <option value="elegir" selected>Elegir</option>
+                <option value="ingles">Inglés Profesional</option>
+                <option value="ipe1">Itinerario Personal Para La Empleabilidad 1</option>
+                <option value="programacion">Programación</option>
+                <option value="edd">Entornos De Desarrollo</option>
+                <option value="si">Sistemas Informáticos</option>
+                <option value="lm">Lenguaje de Marcas</option>
+                <option value="bbdd">Bases de Datos</option>
+            </select>
+            <br/>
+            <label for="comentarios">¿Qué comentarios quieres dejar?</label>
+            <textarea id="comentarios" name="comentarios" placeholder="Escribe aquí tus comentarios" maxlength="30" required></textarea>
+            <br/>
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpdesk Inteligente | Aitana García</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <div class="logo">
+            <a href="index.html">Aitana<span>.dev</span></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Volver al Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        
+        <!-- CABECERA DEL PROYECTO -->
+        <section class="proyecto-hero">
+            <h1>Helpdesk Inteligente</h1>
+            <p class="subtitulo">Sistema de gestión de incidencias: Portal Web + App KMP (Android y Windows)</p>
+        </section>
+
+        <!-- VISIÓN Y OBJETIVO -->
+        <section class="proyecto-bloque">
+            <h2 class="titulo-seccion">El Problema y la Solución</h2>
+            <p>El objetivo de este proyecto es construir un sistema de gestión de incidencias (Helpdesk) con dos perfiles de cliente totalmente diferenciados, pero conectados a un único y potente backend centralizado.</p>
+            
+            <div class="tarjetas-container">
+                <div class="tarjeta-rol">
+                    <h3>Para el Empleado</h3>
+                    <p>Un <strong>Portal Web</strong> limpio y accesible donde el usuario puede abrir incidencias (con adjuntos), hacer seguimiento de su problema y comunicarse con soporte.</p>
+                </div>
+                <div class="tarjeta-rol">
+                    <h3>Para el Técnico IT</h3>
+                    <p>Una <strong>Aplicación de Escritorio y Móvil</strong> (desarrollada en Kotlin Multiplatform) desde donde recibe notificaciones push, se asigna tickets y gestiona las resoluciones.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STACK TECNOLÓGICO -->
+        <section class="proyecto-bloque bg-suave">
+            <h2 class="titulo-seccion">Stack Tecnológico</h2>
+            <p>Una arquitectura diseñada para ser robusta, escalable y preparada para integrar modelos de Inteligencia Artificial.</p>
+            
+            <ul class="lista-stack">
+                <li><span>Backend & API:</span> FastAPI (Python), SQLAlchemy 2. Estandarizado y rápido.</li>
+                <li><span>Base de Datos:</span> PostgreSQL 16. Relacional y preparada para datos estructurados.</li>
+                <li><span>App Técnico:</span> Compose Multiplatform (KMP) para Android y Windows.</li>
+                <li><span>Portal Web:</span> HTML, CSS, JavaScript. Ligero y eficiente.</li>
+                <li><span>Infraestructura:</span> Docker y Docker Compose. Despliegue en contenedores.</li>
+            </ul>
+        </section>
+
+        <!-- EL MODELO DE DATOS -->
+        <section class="proyecto-bloque">
+            <h2 class="titulo-seccion">Estructura de Base de Datos</h2>
+            <p>El núcleo relacional cuenta con las siguientes entidades principales, diseñadas para asegurar la trazabilidad:</p>
+            
+            <div class="bd-grid">
+                <div class="bd-item"><strong>Users:</strong> Empleados, Técnicos y Administradores.</div>
+                <div class="bd-item"><strong>Tickets (Incidencias):</strong> Categoría, prioridad, estado y tiempos.</div>
+                <div class="bd-item"><strong>Comments:</strong> Comunicación entre técnico y empleado (con modo "nota interna").</div>
+                <div class="bd-item"><strong>Attachments:</strong> Logs y capturas de pantalla de los errores.</div>
+            </div>
+        </section>
+
+        <!-- FASES DE DESARROLLO -->
+        <section class="proyecto-bloque">
+            <h2 class="titulo-seccion">Fases del Proyecto (Roadmap)</h2>
+            <div class="fases-roadmap">
+                <div class="fase">
+                    <h4>Fase 1: Cimientos y Backend</h4>
+                    <p>Configuración de contenedores Docker (PostgreSQL) y creación del sistema de usuarios, incidencias y roles con FastAPI.</p>
+                </div>
+                <div class="fase">
+                    <h4>Fase 2: Portal Web</h4>
+                    <p>Desarrollo de la interfaz web para empleados: creación de tickets y listado de estado.</p>
+                </div>
+                <div class="fase">
+                    <h4>Fase 3: App Técnico (KMP)</h4>
+                    <p>Desarrollo multiplataforma para gestionar colas de trabajo, asignar tickets y recibir notificaciones push/websockets.</p>
+                </div>
+                <div class="fase destacado">
+                    <h4>Fase 4: Inteligencia Artificial (Próximamente)</h4>
+                    <p>Clasificación automática de tickets (categoría y prioridad) leyendo la descripción mediante NLP.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER / CONTACTO -->
+    <footer id="contacto">
+        <div class="footer-contenido">
+            <div class="footer-logo">
+                Aitana<span>.dev</span>
+            </div>
+            
+            <!-- enlaces profesionales -->
+            <div class="footer-links">
+                <a href="https://github.com/aitanagp" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/aitana-garcía-pérez-647a27214/" target="_blank">LinkedIn</a>
+                <a href="mailto:gpaitana.dev@gmail.com">Email</a>
+            </div>
+        </div>
+        
+        <div class="footer-copyright">
+            <p>&copy; 2026 Aitana García.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

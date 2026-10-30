@@ -1,0 +1,83 @@
+3. Descarga el archivo "buscaerrores.txt" desde Aules. Luego, analiza el código HTML proporcionado en busca de errores y agrega comentarios HTML que expliquen los errores
+encontrados y ofrezcan sugerencias para corregirlos.
+Código HTML proporcionado en el ejercicio:
+<!DOCTYPE html5>
+<html lang=es>
+<head>
+    <meta charset="UTF-12">
+    <title>Información sobre Tenis</title>
+<body>
+    <h1>El Fascinante Mundo del Tenis</h1>
+
+    <p>El tenis es un deporte de raqueta que se juega en una cancha rectangular dividida en dos mitades por una red. Es uno de los deportes más populares en todo el mundo y se practica tanto a nivel profesional como amateur.</p>
+
+    <h2>Equipamiento de Tenis</h2>
+    <ul type="circulo" start="3">
+        <li>Raqueta: La raqueta es la herramienta principal en el tenis y viene en diferentes tamaños y estilos.<li>
+        <li>Pelotas: Las pelotas de tenis son amarillas y están diseñadas para rebotar de manera consistente.<li>
+        <li>Zapatillas: Es importante usar zapatillas adecuadas para evitar lesiones en la cancha.<li>
+    </ul>
+
+    <h3>Reglas Básicas</h3>
+    <ol type="a" start="d">
+        <li>El juego comienza con un saque desde un lado de la cancha hacia el otro.<li>
+        <li>El objetivo es golpear la pelota de manera que el oponente no pueda devolverla dentro de la cancha.<li>
+        <li>El puntaje se lleva en 15, 30, 40 y juego. Un jugador debe ganar por al menos dos puntos.<li>
+    </ol>
+
+    <h4><b>Consejo:</b> Mantén <u><i>fuerte la concentración</u> y la técnica</i> en la cancha.</h4>
+
+    <p>El tenis es un deporte emocionante que requiere <strong>dedicación</strong> y <del>entrenamiento constante</del> para mejorar tus habilidades.</p>
+
+    <img src="./jugadores/tenis" alt="Jugador de tenis en acción" width="300" height="200">
+</body>
+</head>
+===========================================================================================================================================================================================
+Código HTML CORREGIDO:
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Información sobre Tenis</title>
+</head>
+<body>
+    <h1>El Fascinante Mundo del Tenis</h1>
+
+    <p>El tenis es un deporte de raqueta que se juega en una cancha rectangular dividida en dos mitades por una red. Es uno de los deportes más populares en todo el mundo y se practica tanto a nivel profesional como amateur.</p>
+
+    <h2>Equipamiento de Tenis</h2>
+    <ul>
+        <li>Raqueta: La raqueta es la herramienta principal en el tenis y viene en diferentes tamaños y estilos.</li> 
+        <li>Pelotas: Las pelotas de tenis son amarillas y están diseñadas para rebotar de manera consistente.</li> 
+        <li>Zapatillas: Es importante usar zapatillas adecuadas para evitar lesiones en la cancha.</li> 
+    </ul>
+
+    <h2>Reglas Básicas</h2>
+    <ol type="a" start="3">
+        <li>El juego comienza con un saque desde un lado de la cancha hacia el otro.</li> 
+        <li>El objetivo es golpear la pelota de manera que el oponente no pueda devolverla dentro de la cancha.</li> 
+        <li>El puntaje se lleva en 15, 30, 40 y juego. Un jugador debe ganar por al menos dos puntos.</li> 
+    </ol>
+
+    <h2><b>Consejo:<b> Mantén </b> <u><i>fuerte la concentración</i></u> y la técnicaen la cancha.</h2>
+
+    <p>El tenis es un deporte emocionante que requiere <strong>dedicación</strong> y <del>entrenamiento constante</del> para mejorar tus habilidades.</p>
+
+    <img src="./jugadores/tenis" alt="Jugador de tenis en acción" width="300" height="200"/> 
+</body>
+</html>
+===========================================================================================================================================================================================
+EXPLICACIÓN:> 
+:> Tras analizar el código proporcionado en el ejercicio 3, un error a simple vista es que en "<!DOCTYPE html5>" hay un error claro, y es que sobra el 5 (1). 
+:> En el idioma, hay que ponerlo en comillas (2). 
+:> En el head, se ha puesto abajo del todo, cuando la estructura debe ser "<head>CONTENIDO</head>" (3). 
+:> En el ul, hay type y un start, cuando, al no ser una lista ordenada, no debe de aparecer (4).
+:> Trataría de ser un título de apartado, por lo que, debe ser h2. Los h3 y h4 únicamente se pueden utilizar si h3 es hijo de h2, y h4 es hijo de h3. En estos casos no lo son, así que tendría que ser H2 (5).
+:> En el ol, no se ha cerrado la etiqueta li. Ejemplo, <li>CONTENIDO</li> (6).
+:> El UTF debe ser 8, no 12. <meta charset="UTF-8"> (7).
+:> Hay que cerrar el HTML con la etiqueta </html>. Ejemplo, <html>CONTENIDO</html> (8).
+:> La etiqueta img debe cerrarse con /. Ejemplo,<img src="...…"/> (9).
+:> En el último h2, faltaría la etiqueta <b>, ya que, se ha puesto el </b>, y está mal puesto. Ejemplo <b>CONTENIDO</b> (10).
+:> En el ul, type=circulo, debe estar en inglés. Ejemplo, <ul type="circle"> (11).
+:> El type del ul debe estar en el li, no en el ol. Ejemplo, <li type="disc"> (12).
+

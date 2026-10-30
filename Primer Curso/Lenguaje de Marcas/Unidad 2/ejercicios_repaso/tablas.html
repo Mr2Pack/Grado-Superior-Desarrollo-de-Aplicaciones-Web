@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Módulos</th>
+            <th>Calificación</th>
+        </tr>
+        <tr>
+            <td>Programación</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>BBDD</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>EDD</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Lenguaje de Narcas</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Sistemas Informáticos</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Inglés</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>IPE 1</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Proyecto Intermodular</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Alimento</th>
+            <th>Color</th>
+            <th>Sabor</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Limón</td>
+            <td>Amarillo</td>
+            <td>Amargo</td>
+            <td>1€</td>
+        </tr>
+        <tr>
+            <td>Manzana</td>
+            <td>Rojo</td>
+            <td>Dulce</td>
+            <td>1€</td>
+        </tr>
+        <tr>
+            <td>Tomate</td>
+            <td>Rojo</td>
+            <td>Dulce</td>
+            <td>1€</td>
+        </tr>
+        <tr>
+            <td>Cebolla</td>
+            <td>Morada</td>
+            <td>Dulce</td>
+            <td>1€</td>
+        </tr>
+        <tr>
+            <td>Pimiento</td>
+            <td>Verde</td>
+            <td>Picante</td>
+            <td>1€</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Horas</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td>15:30 - 16:25</td>
+            <td rowspan="3">Bases de Datos</td>
+            <td rowspan="2">Sistemas Informáticos</td>
+            <td>Lenguaje de Marcas</td>
+            <td rowspan="2">Sistemas Informáticos</td>
+            <td rowspan="2">IPE 1</td>
+        </tr>
+        <tr>
+            <td>16:25 - 17:20</td>
+            <td>IPE 1</td>
+        </tr>
+        <tr>
+            <td>17:20 - 18:15</td>
+            <td>Inglés Profesional</td>
+            <td>Programación</td>
+            <td>Programación</td>
+            <td>Programación</td>
+        </tr>
+        <tr>
+            <td>18:15 - 18:35</td>
+            <td colspan="5">Descanso</td>
+        </tr>
+        <tr>
+            <td>18:35 - 19:30</td>
+            <td>EDD</td>
+            <td rowspan="2">EDD</td>
+            <td>Programación</td>
+            <td>Programación</td>
+            <td>Programación</td>
+        </tr>
+        <tr>
+            <td> 19:30 - 20:25</td>
+            <td rowspan="2">Programación</td>
+            <td rowspan="2">BBDD</td>
+            <td>Inglés</td>
+            <td rowspan="2">Lenguaje de Marcas</td>
+        </tr>
+        <tr>
+            <td>20:25 - 21:20</td>
+            <td>Sistemas Informáticos</td>
+            <td>P.Intermodular</td>
+        </tr>
+    </table>
+    <form action="/" methoh="post">
+        <fieldset>
+            <legend>Formulario con tablas</legend>
+                <table>
+                <tr>
+                    <th>Formulario</th>
+                </tr>
+                <tr>
+                    <td><label for="nombre">Nombre</label></td>
+                    <td><input type="text" placeholder="Escribe tu nombre" maxlenght="30" required></td>
+                </tr>
+                <tr>
+                    <td><label for="correo">Correo</label></td>
+                    <td><input type="email" placeholder="Escribe tu correo" required></td>
+                </tr>
+                <tr>
+                    <td><label for="telefono">Número de teléfono</label></td>
+                    <td><input type="tel" placeholder="Escribe tu número de teléfono" required></td>
+                </tr>
+                <tr>
+                    <td><label for="contrasenya">Contraseña</label></td>
+                    <td><input type="password" placeholder="Escribe tu contraseña" required></td>
+                </tr>
+                <tr>
+                    <td><label for="contrasenya_repetir">Contraseña repetida</label></td>
+                    <td><input type="password" placeholder="Escribe de nuevo tu contraseña" required></td>
+                </tr>
+                <tr>
+                    <input type="reset" value="Borrar">
+                    <input type="submit" value="Enviar">
+                </tr>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* FÁBRICA DE PELOTAS "GOLAZOS" */
+table Planta {
+  color string [pk]
+  superficie integer
+  proceso varchar
+  nombre varchar
+  grado_complejidad integer
+}
+
+table Máquina {
+  número integer [pk]
+  marca varchar
+  modelo varchar
+}
+
+table Técnico {
+  DNI varchar [pk]
+  nyAp integer
+  fecNac date
+  teléfono varchar
+}
+
+/* Relaciones */
+table Posee {
+  color string [pk, not null, ref: > Planta.color]
+  número integer [pk, not null, ref: > Máquina.número]
+}
+
+table Opera {
+  número integer [pk, not null, ref: > Máquina.número]
+  DNI varchar [pk, not null, ref: > Técnico.DNI]
+  turno integer
+  período date
+  fecha_inicio date
+  fecha_fin date
+}
+
+table Reemplaza {
+  número integer [pk, not null, ref: > Máquina.número]
+  num_reemplazado integer [pk, not null, ref: > Máquina.número]
+}
