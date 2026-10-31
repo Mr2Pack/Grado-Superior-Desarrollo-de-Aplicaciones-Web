@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario Revista</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>datos personales</legend>
+                <label for="input_nombre">Nombre: </label>
+                <input type="text" id="input_nombre" name="nombre" maxlength="30" required/>
+                <label for="input_apellido1">Primer apellido: </label>
+                <input type="text" id="input_apellido1" name="apellido1" maxlength="30" required/>
+                <label for="input_apellido2">Segundo apellido: </label>
+                <input type="text" id="input_apellido2" name="apellido2" maxlength="30" required/>
+                <br/>
+                <br/>
+                <label for="input_direccion">Dirección: </label>
+                <input type="text" id="input_direccion" name="direccion" maxlength="30" placeholder="calle o plaza, número y piso" required/>
+                <br/>
+                <br/>
+                <label for="input_email">email: </label>
+                <input type="email" id="input_email" name="email" maxlength="30" placeholder="@" required/>
+                <br/>
+                <br/>
+                <label for="input_sexo">sexo</label>
+                <br/>
+                <input type="radio" id="input_sexo1" name="sexo" required/>
+                <label for="input_sexo1"> Varón</label>  
+                <br/>
+                <input type="radio" id="input_sexo2" name="sexo" required/>
+                <label for="input_sexo2"> Mujer</label>  
+            </fieldset>
+
+            <fieldset>
+                <legend>Nivel de estudios e intereses</legend>
+                <label for="input_estudios">Nivel de estudios: </label>
+                <br/>
+                <input type="radio" id="input_graduado" name="estudios"/>
+                <label for="input_graduado">Graduado escolar</label>
+                <br/>
+                <input type="radio" id="input_eso" name="estudios"/>
+                <label for="input_eso">Graduado en E.S.O</label>
+                <br/>
+                <input type="radio" id="input_bachilleratofp" name="estudios"/>
+                <label for="input_bachilleratofp">Bachiller - Formación Profesional</label>
+                <br/>
+                <input type="radio" id="input_diplomado" name="estudios"/>
+                <label for="input_diplomado">Diplomado</label>
+                <br/>
+                <input type="radio" id="input_licenciado" name="estudios"/>
+                <label for="input_licenciado">Licenciado o Doctorado</label>
+                <br/>
+                <br/>
+                <label for="input_recibir">Recibir artículos sobre los siguientes temas: </label>
+                <br/>
+                <input type="checkbox" id="input_musica" name="musica"/>
+                <label for="input_musica">Música</label>
+                <br/>
+                <input type="checkbox" id="input_deportes" name="deportes"/>
+                <label for="input_deportes">Deportes</label>
+                <br/>
+                <input type="checkbox" id="input_cine" name="cine"/>
+                <label for="input_cine">Cine</label>
+                <br/>
+                <input type="checkbox" id="input_libros" name="libros"/>
+                <label for="input_libros">Libros</label>
+                <br/>
+                <input type="checkbox" id="input_ciencia" name="ciencia"/>
+                <label for="input_ciencia">Ciencia</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos sobre la revista</legend>
+                <p>Frecuencia con la que se recibirá la revista: </p>
+                <select name="frecuencia">
+                    <option value="1">diario</option>
+                    <option value="2" selected>semanal</option>
+                    <option value="3">mensual</option>
+                    <option value="4">anual</option>
+                </select>
+                <p>puedes mandar tu artículo sobre cualquier tema de los que tratamos. Nosotros lo valoraremos para que pueda ser publicado.</p>
+                <p>mandar artículo: <input type="file"></p>
+                <p>Si deseas mandar simplemente una opinión o comentario escríbelo aquí: </p>
+                <textarea name="descripcion" cols="30">Escribe tu comentario: </textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Comenzar de nuevo</legend>
+                <p>Borrar todos los datos del formulario y volver a empezar: <button type="reset">borrar todo</button></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>enviar</legend>
+                <p>Enviar formulario por correo electrónico: Al pulsar en el botón se abrirá la página de envío de correo: en esa página pulsa en enviar: </p>
+                <button type="submit">enviar por correo</button>
+            </fieldset>
+        </form>
+    </main
+</body>
+</html>
